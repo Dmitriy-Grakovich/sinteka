@@ -5,7 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/**
+ * @author Grakovich 17.03.2023
+ */
 public class ReadInFile implements ReadIn {
     private final String fileName;
 

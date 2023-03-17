@@ -5,8 +5,9 @@ import service.MyService;
 
 import java.io.*;
 import java.util.List;
-
-
+/**
+ * @author Grakovich 17.03.2023
+ */
 public class WriteOutFile implements WriteOut {
 
     private final MyService service;

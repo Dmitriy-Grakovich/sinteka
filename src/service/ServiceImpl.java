@@ -5,7 +5,9 @@ import repository.Repository;
 import repository.RepositoryImpl;
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * @author Grakovich 17.03.2023
+ */
 public class ServiceImpl implements MyService {
     private final ReadIn readIn;
     private final Repository repository = new RepositoryImpl();
@@ -24,7 +26,6 @@ public class ServiceImpl implements MyService {
         List<String> result = new ArrayList<>();
         List<String> oneList = list.get(0);
         List<String> twoList = list.get(1);
-
 
         for (String stFromOneList : oneList) {
 
@@ -74,7 +75,8 @@ public class ServiceImpl implements MyService {
         String result = "?";
         String[] arraysList2 = stFromTwoList.split(" ");
         for (String stArraysList2 : arraysList2) {
-            if (repository.getLibrary().contains(stFromOneList.toLowerCase()) && repository.getLibrary().contains(stArraysList2.toLowerCase())) {
+            if (repository.getLibrary().contains(stFromOneList.toLowerCase())
+                    && repository.getLibrary().contains(stArraysList2.toLowerCase())) {
                 result = stFromTwoList;
                 break;
             }
